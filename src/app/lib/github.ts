@@ -18,6 +18,7 @@ export async function getRepos(): Promise<Repo[]> {
   const username = 'Paliga'; 
   const response = await axios.get<Repo[]>(`https://api.github.com/users/${username}/repos`, {
     headers: {
+      Authorization: `token ${process.env.GITHUB_TOKEN}`,
       Accept: 'application/vnd.github.v3+json',
     },
   });
