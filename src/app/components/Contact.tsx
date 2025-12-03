@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-5xl font-bold mb-12">Get In Touch</h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          I'm always open to new opportunities and interesting projects.
+          I&apos;m always open to new opportunities and interesting projects.
         </p>
         <a
           href="mailto:your-email@example.com"
