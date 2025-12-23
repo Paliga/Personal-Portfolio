@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="col-span-full lg:col-span-3 lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-3 w-full bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-between mx-auto lg:mx-0">
+    <div className="col-span-full lg:col-span-3 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-4 w-full bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-between mx-auto lg:mx-0">
       {/* Top section - Text and Avatar side by side */}
       <div className="flex flex-col lg:flex-row gap-6 items-start">
         {/* Left side - Text content */}
@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48">
             <Image
-              src="/me.jpeg"
+              src="/Tsalidis_Profile.png"
               alt="Christos Tsalidis"
               fill
               className="rounded-full object-cover border-4 border-zinc-700"

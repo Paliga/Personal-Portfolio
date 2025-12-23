@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-10 text-center text-gray-500 border-t border-white/10">
+    <footer className="col-span-full lg:col-start-7 lg:col-end-9 lg:row-start-6 lg:row-end-7 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex items-center justify-center text-center text-sm text-gray-400">
       <p>© {new Date().getFullYear()} YourName. Built with Next.js + Tailwind.</p>
     </footer>
   );
