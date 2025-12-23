@@ -1,5 +1,5 @@
 import Hero from './components/Hero';
-import Header from './components/Header';
+import Timer from './components/Timer';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -25,9 +25,15 @@ export default function Home() {
       />
 
       {/* All content */}
-      <div className="relative z-10 container mx-auto px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <div className="relative z-10 container mx-auto px-8 py-16 h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 grid-rows-5 lg:grid-rows-5 gap-4 max-w-6xl mx-auto h-full">
           <Hero />
+          <About />
+          <Contact />
+          <Timer />
+
+          <Projects />
+          <Footer />
           {/* More cards will go here */}
         </div>
       </div>

@@ -1,21 +1,32 @@
-export default function About() {
-  const skills = ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Node.js'];
+const tools = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'];
 
+export default function About() {
   return (
-    <section id="about" className="py-24">
-      <div className="container mx-auto px-6 max-w-4xl">
-        <h2 className="text-5xl font-bold text-center mb-16">About Me</h2>
-        <p className="text-xl text-center text-gray-300 leading-relaxed mb-12">
-          I build fast, beautiful, and user-friendly web experiences with modern tools and a pixel-perfect eye.
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          {skills.map((skill) => (
-            <div key={skill} className="bg-slate-800/50 border border-white/10 rounded-lg p-6 text-center hover:border-accent/50 transition">
-              <p className="text-lg font-medium">{skill}</p>
-            </div>
-          ))}
-        </div>
+    <div className="col-span-full md:col-span-2 lg:col-span-1 lg:col-start-6 lg:col-end-8 lg:row-start-1 lg:row-end-4 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 h-full flex flex-col gap-4">
+      <div>
+        <p className="text-xs uppercase tracking-wide text-zinc-500">About me</p>
+        <h3 className="text-lg font-semibold text-white mt-2 leading-snug">
+          Hi, I&apos;m Christos, a software developer from Greece.
+        </h3>
       </div>
-    </section>
+
+      <div>
+        <p className="text-sm text-zinc-400">My primary tools of choice include:</p>
+        <ul className="mt-3 space-y-2 text-sm text-zinc-200">
+          {tools.map((tool) => (
+            <li key={tool} className="border-l-2 border-red-500/60 pl-3">{tool}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="text-sm text-zinc-300 leading-relaxed">
+        <p>
+          Beyond coding, I&apos;m passionate about travelling and getting new experiences.
+        </p>
+        <p className="mt-2">
+          An unusual hobby of mine is collecting old retail video games, they&apos;re interesting pieces of history.
+        </p>
+      </div>
+    </div>
   );
 }

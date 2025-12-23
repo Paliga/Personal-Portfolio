@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="col-span-full lg:col-span-2 w-full lg:w-[774px] h-auto lg:h-[318px] bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-between mx-auto lg:mx-0">
+    <div className="col-span-full lg:col-span-3 lg:col-start-1 lg:col-end-6 lg:row-start-1 lg:row-end-3 w-full bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-between mx-auto lg:mx-0">
       {/* Top section - Text and Avatar side by side */}
       <div className="flex flex-col lg:flex-row gap-6 items-start">
         {/* Left side - Text content */}
@@ -14,7 +14,7 @@ export default function Hero() {
             Hi, I&apos;m <span className="text-red-500">Christos Tsalidis</span>
           </h1>
           <p className="mt-3 text-base md:text-lg text-zinc-400 leading-snug">
-            A wanna be front-end developer.
+            Software Developer.
             <span className="block mt-2 text-zinc-500 text-sm">
               Feel free to reach out to me if you have any projects in mind,<br />
               or just to say hello.
