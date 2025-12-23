@@ -3,33 +3,33 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 export default function TimerCard() {
-  const [time, setTime] = useState(new Date());
+  const [date, setDate] = useState<Date>(() => new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
+    const timer = setInterval(() => {
+      setDate(new Date());
     }, 1000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(timer);
   }, []);
 
-  const hours = time.getHours().toString().padStart(2, '0');
-  const minutes = time.getMinutes().toString().padStart(2, '0');
-  const seconds = time.getSeconds().toString().padStart(2, '0');
+  const formattedTime = new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric',
+    minute: '2-digit',
+    hour12: true,
+    timeZoneName: 'short',
+  }).format(date);
 
   return (
     <motion.div
       className="col-span-full lg:col-start-3 lg:col-end-5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex flex-col items-center justify-center"
       whileHover={{ scale: 1.02 }}
+      transition={{ type: 'spring', stiffness: 300 }}
     >
-      <p className="text-xs uppercase tracking-wide text-zinc-500 mb-4">Current Time</p>
-      <div className="flex gap-2 text-5xl font-bold text-white">
-        <span>{hours}</span>
-        <span className="animate-pulse">:</span>
-        <span>{minutes}</span>
-        <span className="animate-pulse">:</span>
-        <span>{seconds}</span>
-      </div>
+      <p className="text-xs uppercase tracking-wide text-zinc-500 mb-1">Current Time</p>
+      <span className="text-2xl font-semibold text-white tracking-wide">
+        {formattedTime}
+      </span>
     </motion.div>
   );
 }
