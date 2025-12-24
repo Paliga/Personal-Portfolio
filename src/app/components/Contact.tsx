@@ -39,7 +39,7 @@ export default function Contact() {
         </div>
 
         <div className="flex items-center gap-3 text-gray-400 mt-2 pt-4 border-t border-gray-800">
-          <div className="p-2 rounded-md text-red-400">
+          <div className="p-2 text-red-400">
             <FaMapMarkerAlt size={20} />
           </div>
           <div className="flex flex-col">
