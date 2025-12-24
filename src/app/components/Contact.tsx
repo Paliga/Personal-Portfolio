@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const social = [
   { label: 'Email', href: 'mailto:tsalichris12@gmail.com' },
@@ -35,6 +36,16 @@ export default function Contact() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="flex items-center gap-3 text-gray-400 mt-2 pt-4 border-t border-gray-800">
+          <div className="p-2 rounded-md text-red-400">
+            <FaMapMarkerAlt size={20} />
+          </div>
+          <div className="flex flex-col">
+            <span className="font-bold text-gray-200">Thessaloniki, GR</span>
+            <span className="text-xs text-gray-500">Central Macedonia</span>
+          </div>
         </div>
       </div>
     </motion.section>
