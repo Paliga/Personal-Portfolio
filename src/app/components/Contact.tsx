@@ -1,21 +1,41 @@
 'use client';
 import { motion } from 'framer-motion';
 
+const social = [
+  { label: 'Email', href: 'mailto:tsalichris12@gmail.com' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/christos-tsalidis' },
+  { label: 'GitHub', href: 'https://github.com/Paliga' },
+];
+
 export default function Contact() {
   return (
-    <motion.section id="contact" className="lg:col-start-1 lg:col-end-3 lg:row-start-4 lg:row-end-7 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex items-center justify-center"
-    whileHover={{ scale: 1.02 }}>
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-5xl font-bold mb-12">Get In Touch</h2>
-        <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          I&apos;m always open to new opportunities and interesting projects.
-        </p>
-        <a
-          href="mailto:your-email@example.com"
-          className="inline-block bg-accent text-primary px-12 py-5 rounded-full text-lg font-semibold hover:bg-sky-400 transition"
-        >
-          Say Hello
-        </a>
+    <motion.section
+      id="contact"
+      className="lg:col-start-1 lg:col-end-3 lg:row-start-4 lg:row-end-7 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex items-start justify-center"
+      whileHover={{ scale: 1.02 }}
+    >
+      <div className="w-full space-y-4">
+        <h3 className="text-lg font-semibold text-white leading-snug">
+          Let&apos;s get in touch! I&apos;m always open to new opportunities.
+        </h3>
+
+        <div className="space-y-2">
+          <p className="text-lg font-semibold text-zinc-200">Socials</p>
+          <ul className="mt-1 space-y-2 text-sm text-zinc-200">
+            {social.map((item) => (
+              <li key={item.href} className="border-l-2 border-red-500/60 pl-3">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </motion.section>
   );

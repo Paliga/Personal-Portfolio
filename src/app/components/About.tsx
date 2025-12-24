@@ -4,7 +4,7 @@ const tools = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'];
 
 export default function About() {
   return (
-    <motion.div className="col-span-full md:col-span-2 lg:col-span-1 lg:col-start-7 lg:col-end-9 lg:row-start-1 lg:row-end-6 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 h-full flex flex-col gap-4"
+    <motion.div className="col-span-full md:col-span-2 lg:col-span-1 lg:col-start-7 lg:col-end-9 lg:row-start-1 lg:row-end-6 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 h-full flex flex-col gap-4"
     whileHover={{ scale: 1.02 }}
     >
       <div>

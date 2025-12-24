@@ -22,7 +22,7 @@ export default function TimerCard() {
 
   return (
     <motion.div
-      className="col-span-full lg:col-start-3 lg:col-end-5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex flex-col items-center justify-center"
+      className="col-span-full lg:col-start-3 lg:col-end-5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex flex-col items-center justify-center"
       whileHover={{ scale: 1.02 }}
       transition={{ type: 'spring', stiffness: 300 }}
     >
