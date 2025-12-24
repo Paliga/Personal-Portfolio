@@ -16,7 +16,7 @@ export default function Contact() {
     >
       <div className="w-full space-y-4">
         <h3 className="text-lg font-semibold text-white leading-snug">
-          Let&apos;s get in touch! I&apos;m always open to new opportunities.
+          Let&apos;s get in touch! <br />I&apos;m always open to new opportunities.
         </h3>
 
         <div className="space-y-2">
