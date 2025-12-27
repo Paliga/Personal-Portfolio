@@ -17,8 +17,8 @@ export default function Hero() {
           <p className="mt-3 text-base md:text-lg text-zinc-400 leading-snug">
             Software Developer
             <span className="block mt-2 text-zinc-500 text-sm">
-              Feel free to reach out to me if you have any projects in mind,<br />
-              or just to say hello.
+              Open to full-time opportunities. I'd love to chat about how my skills 
+              align with your hiring needs
             </span>
           </p>
         </div>
