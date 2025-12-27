@@ -15,7 +15,7 @@ export default function Hero() {
             Hi, I&apos;m <span className="text-red-500">Christos Tsalidis</span>
           </h1>
           <p className="mt-3 text-base md:text-lg text-zinc-400 leading-snug">
-            Software Developer.
+            Software Developer
             <span className="block mt-2 text-zinc-500 text-sm">
               Feel free to reach out to me if you have any projects in mind,<br />
               or just to say hello.

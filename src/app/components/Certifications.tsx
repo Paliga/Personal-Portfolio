@@ -97,7 +97,7 @@ export default function Certifications() {
 
                 <li>
                   <a href="https://media.licdn.com/dms/document/media/v2/D4D2DAQE7hGe3WDbWwQ/profile-treasury-document-pdf-analyzed/profile-treasury-document-pdf-analyzed/0/1714587839749?e=1767225600&v=beta&t=lsE5VqGLGwrJILhnHvc0IineR3Rsz22OovpgeP1Gytw" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:underline">
-                    Python for Non-Programmers - Aristotle University of Thessaloniki (AUTH), 2020
+                    Python for Non-Programmers - Aristotle University of Thessaloniki, 2020
                   </a>
                 </li>
               </ul>

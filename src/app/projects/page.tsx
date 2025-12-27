@@ -26,14 +26,14 @@ export default function ProjectsPage() {
             My <span className="text-red-500">Projects</span>
           </h1>
           <p className="text-zinc-400 mb-12">
-            Here are some of the projects I&apos;ve worked on.
+            Here are my projects.
           </p>
 
           {/* Project Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Example Project Card */}
             <div className="bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500">
-              <h3 className="text-xl font-bold mb-2">Project 1</h3>
+              <h3 className="text-xl font-bold mb-2">My Personal Portfolio</h3>
               <p className="text-zinc-400 text-sm mb-4">
                 Description of your project goes here.
               </p>
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
 
             {/* Add more project cards here */}
             <div className="bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500">
-              <h3 className="text-xl font-bold mb-2">Project 2</h3>
+              <h3 className="text-xl font-bold mb-2">IT Asset Manager</h3>
               <p className="text-zinc-400 text-sm mb-4">
                 Description of your project goes here.
               </p>
@@ -54,15 +54,17 @@ export default function ProjectsPage() {
                 <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Tailwind</span>
               </div>
             </div>
-          </div>
 
-          {/* Back Button */}
-          <Link
-            href="/"
-            className="inline-block mt-12 px-6 py-3 bg-zinc-800 text-white rounded-xl hover:bg-red-500 transition-all duration-300"
-          >
-            ← Back to Home
-          </Link>
+            {/* Back Button */}
+            <div className="col-span-1 md:col-span-2 mt-12 flex">
+              <Link
+                href="/"
+                className="px-6 py-3 bg-zinc-800 text-white rounded-xl hover:bg-red-500 transition-all duration-300"
+              >
+                ← Back to Home
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </main>
