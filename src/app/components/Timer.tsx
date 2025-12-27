@@ -22,14 +22,13 @@ export default function TimerCard() {
 
   return (
     <motion.div
-      className="col-span-full lg:col-start-3 lg:col-end-5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex flex-col items-center justify-center"
+      className="col-span-full lg:col-start-3 lg:col-end-5 lg:row-start-4 lg:row-end-5 bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 shadow-2xl hover:border-red-500/50 transition-all duration-500 flex flex-col items-center justify-center"
       whileHover={{ scale: 1.02 }}
-      transition={{ type: 'spring', stiffness: 300 }}
     >
-      <p className="text-xs uppercase tracking-wide text-zinc-500 mb-1">Current Time</p>
-      <span className="text-2xl font-semibold text-white tracking-wide">
-        {formattedTime}
-      </span>
+        <p className="text-xs uppercase tracking-wide text-zinc-500 mb-1">Current Time</p>
+        <span className="text-2xl font-semibold text-white tracking-wide">
+          {formattedTime}
+        </span>
     </motion.div>
   );
 }

@@ -27,8 +27,8 @@ export default function Home() {
       />
 
       {/* All content */}
-      <div className="relative z-10 container mx-auto px-8 py-16 h-screen">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 grid-rows-7 lg:grid-rows-7 gap-4 max-w-6xl mx-auto h-full">
+      <div className="relative z-10 container mx-auto px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 auto-rows-auto lg:grid-rows-7 gap-4 max-w-7xl mx-auto h-auto lg:h-full">
           <Hero />
           <About />
           <Contact />

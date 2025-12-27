@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <motion.div className="col-span-full lg:col-span-3 lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-4 w-full bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-between mx-auto lg:mx-0"
+    <motion.div className="col-span-full lg:col-start-1 lg:col-end-7 lg:row-start-1 lg:row-end-4 w-full bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500 shadow-2xl flex flex-col justify-between mx-auto lg:mx-0"
     whileHover={{ scale: 1.02 }}>
       {/* Top section - Text and Avatar side by side */}
       <div className="flex flex-col lg:flex-row gap-6 items-start">
