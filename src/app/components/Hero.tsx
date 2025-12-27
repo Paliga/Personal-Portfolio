@@ -17,7 +17,7 @@ export default function Hero() {
           <p className="mt-3 text-base md:text-lg text-zinc-400 leading-snug">
             Software Developer
             <span className="block mt-2 text-zinc-500 text-sm">
-              Open to full-time opportunities. I'd love to chat about how my skills 
+              Open to full-time opportunities. I&apos;d love to chat about how my skills 
               align with your hiring needs
             </span>
           </p>
