@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-const tools = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'];
+const tools = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Ajax', 'jQuery', 'PHP'];
 
 export default function About() {
   return (
@@ -15,8 +15,8 @@ export default function About() {
       </div>
 
       <div>
-        <p className="text-sm text-zinc-400">My primary tools of choice include:</p>
-        <ul className="mt-3 space-y-2 text-sm text-zinc-200">
+        <p className="text-xs text-zinc-400">My primary tools of choice include:</p>
+        <ul className="mt-3 space-y-2 text-xs text-zinc-200">
           {tools.map((tool) => (
             <li key={tool} className="border-l-2 border-red-500/60 pl-3">{tool}</li>
           ))}

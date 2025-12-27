@@ -30,30 +30,38 @@ export default function ProjectsPage() {
           </p>
 
           {/* Project Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
             {/* Example Project Card */}
-            <div className="bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500">
-              <h3 className="text-xl font-bold mb-2">My Personal Portfolio</h3>
-              <p className="text-zinc-400 text-sm mb-4">
-                Description of your project goes here.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">React</span>
-                <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Next.js</span>
+            <a href="https://github.com/Paliga/Personal-Portfolio" className="block h-full">
+              <div className="bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500 h-full flex flex-col">
+                <h3 className="text-xl font-bold mb-2">Personal-Portfolio</h3>
+                <p className="text-zinc-400 text-sm mb-4">
+                  A modern, dark-themed personal portfolio featuring a responsive Bento Grid layout.
+                </p>
+                <div className="flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">React</span>
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Next.js</span>
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">TypeScript</span>
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Tailwind CSS</span>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Add more project cards here */}
-            <div className="bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500">
-              <h3 className="text-xl font-bold mb-2">IT Asset Manager</h3>
-              <p className="text-zinc-400 text-sm mb-4">
-                Description of your project goes here.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">TypeScript</span>
-                <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Tailwind</span>
+            <a href="https://github.com/Paliga/IT-Asset-Manager" className="block h-full">
+              <div className="bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-500 h-full flex flex-col">
+                <h3 className="text-xl font-bold mb-2">IT Asset Manager</h3>
+                <p className="text-zinc-400 text-sm mb-4">
+                  A full-stack IT Inventory System featuring live data editing, smart filtering, and dynamic PDF/Excel export capabilities.
+                </p>
+                <div className="flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Ajax</span>
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">JQuery</span>
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">PHP</span>
+                  <span className="px-3 py-1 bg-zinc-800 text-xs rounded-full">Bootstrap</span>
+                </div>
               </div>
-            </div>
+            </a>
 
             {/* Back Button */}
             <div className="col-span-1 md:col-span-2 mt-12 flex">
